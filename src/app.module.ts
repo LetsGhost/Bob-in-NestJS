@@ -8,7 +8,7 @@ import { RedisModule } from './redis/redis.module';
   imports: [
     BugReportModule,
     MongooseModule.forRoot('mongodb://localhost/nest'),
-    CacheModule.register(),
+    CacheModule.register({ isGlobal: true }),
     RedisModule,
   ],
 })

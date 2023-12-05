@@ -2,8 +2,6 @@ import { Injectable } from '@nestjs/common';
 import { BugReport } from './bug-report.schema';
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
-import { CACHE_MANAGER } from '@nestjs/cache-manager';
-import { Cache } from 'cache-manager';
 
 @Injectable()
 export class BugReportService {
